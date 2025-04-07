@@ -1,4 +1,5 @@
-import React from 'react'
+// Removing unused import
+// import React from 'react'
 import styled from 'styled-components'
 
 const UsageContainer = styled.div`

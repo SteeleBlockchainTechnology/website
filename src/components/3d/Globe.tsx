@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
-import { useTexture } from '@react-three/drei'
+// Removing unused import
+// import { useTexture } from '@react-three/drei'
 import { Mesh } from 'three'
 
 const Globe: React.FC = () => {

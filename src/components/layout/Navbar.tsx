@@ -5,7 +5,6 @@ import { Theme } from '../../styles/theme'
 
 interface NavbarContainerProps {
   scrolled: boolean;
-  theme?: Theme;
 }
 
 const NavbarContainer = styled.header<NavbarContainerProps>`
@@ -16,7 +15,7 @@ const NavbarContainer = styled.header<NavbarContainerProps>`
   z-index: ${({ theme }) => theme.zIndex.header};
   padding: ${({ theme }) => theme.spacing.md};
   transition: background-color ${({ theme }) => theme.transitions.normal};
-  background-color: ${({ scrolled, theme }) => 
+  background-color: ${({ scrolled }) => 
     scrolled ? 'rgba(245, 230, 211, 0.9)' : 'transparent'};
   backdrop-filter: ${({ scrolled }) => 
     scrolled ? 'blur(10px)' : 'none'};
@@ -43,11 +42,6 @@ const Logo = styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.colors.accent};
   }
-`;
-
-const LogoImg = styled.img`
-  height: 40px;
-  margin-right: ${({ theme }) => theme.spacing.sm};
 `;
 
 interface NavLinksProps {
