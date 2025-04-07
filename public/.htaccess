@@ -1,0 +1,26 @@
+# Ensure JavaScript files are served with the correct MIME type
+AddType application/javascript .js
+AddType application/javascript .mjs
+
+# Ensure JSON files are served with the correct MIME type
+AddType application/json .json
+
+# Ensure CSS files are served with the correct MIME type
+AddType text/css .css
+
+# Ensure HTML files are served with the correct MIME type
+AddType text/html .html .htm
+
+# Ensure SVG files are served with the correct MIME type
+AddType image/svg+xml .svg
+
+# Ensure font files are served with the correct MIME types
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType font/woff .woff
+AddType font/woff2 .woff2
+
+# Ensure proper handling of module scripts
+<FilesMatch "\.(js|mjs)$">
+  Header set Content-Type "application/javascript"
+</FilesMatch>
