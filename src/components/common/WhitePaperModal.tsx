@@ -87,7 +87,7 @@ const WhitePaperModal: React.FC<WhitePaperModalProps> = ({ isOpen, onClose }) =>
       <ModalContainer>
         <ModalHeader>
           <ModalTitle>White Paper</ModalTitle>
-          <DownloadLink href="/Whitepaper.pdf" download>Download PDF</DownloadLink>
+          <DownloadLink href="./Whitepaper.pdf" download>Download PDF</DownloadLink>
           <CloseButton onClick={onClose}>×</CloseButton>
         </ModalHeader>
         <ModalContent>
