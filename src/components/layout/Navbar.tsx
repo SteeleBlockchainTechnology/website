@@ -42,10 +42,12 @@ const Logo = styled(Link)`
   }
 `;
 
+/* Commented out since it's not being used currently
 const LogoImg = styled.img`
   height: 40px;
   margin-right: ${({ theme }) => theme.spacing.sm};
 `;
+*/
 
 interface NavLinksProps {
   $isOpen: boolean;
