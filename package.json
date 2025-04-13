@@ -6,14 +6,12 @@
   "homepage": "https://steeleblockchaintechnology.github.io/website/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "build:server": "tsc -p tsconfig.server.json",
     "server": "nodemon --watch server -e ts --exec \"npm run build:server && node dist/server/index.js\"",
-    "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\""
   },
   "dependencies": {
     "@react-three/drei": "^10.0.6",
@@ -40,7 +38,6 @@
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",

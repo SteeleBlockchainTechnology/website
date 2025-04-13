@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './styles/theme'
 import App from './App'
@@ -8,11 +8,11 @@ import GlobalStyles from './styles/globalStyles'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="/website">
       <ThemeProvider theme={theme}>
         <GlobalStyles theme={theme} />
         <App />
       </ThemeProvider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 )
