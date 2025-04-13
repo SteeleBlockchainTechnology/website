@@ -5,7 +5,7 @@ import Features from '../components/home/Features'
 
 const HomeContainer = styled.div`
   min-height: 100vh;
-  background-image: url('/src/assets/images/VespucciMap1.jpg');
+  background-image: url('/assets/images/VespucciMap1.jpg');
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
